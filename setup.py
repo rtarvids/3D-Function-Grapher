@@ -9,5 +9,4 @@ setup(
     packages=['3dfunctiongrapher'],
     platforms='any',
     license='MIT License',
-    long_description=open('README.txt').read(),
 )
