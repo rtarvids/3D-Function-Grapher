@@ -1,0 +1,7 @@
+3Dfunctiongrapher module
+========================
+
+.. automodule:: 3Dfunctiongrapher
+    :members:
+    :undoc-members:
+    :show-inheritance:

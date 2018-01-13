@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3Dfunctiongrapher module &#8212; 3Dfunctiongrapher 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to New’s documentation!" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to New’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">3Dfunctiongrapher 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-3Dfunctiongrapher">
+<span id="dfunctiongrapher-module"></span><h1>3Dfunctiongrapher module<a class="headerlink" href="#module-3Dfunctiongrapher" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="3Dfunctiongrapher.funcprocess">
+<code class="descclassname">3Dfunctiongrapher.</code><code class="descname">funcprocess</code><span class="sig-paren">(</span><em>function</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/3Dfunctiongrapher.html#funcprocess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#3Dfunctiongrapher.funcprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the raw function string for malicious code</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>function</strong> &#8211; Raw function input from tkinter.Text() box</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="3Dfunctiongrapher.github_open">
+<code class="descclassname">3Dfunctiongrapher.</code><code class="descname">github_open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/3Dfunctiongrapher.html#github_open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#3Dfunctiongrapher.github_open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens new tab in browser and directs user to GitHub repository</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="3Dfunctiongrapher.grapher">
+<code class="descclassname">3Dfunctiongrapher.</code><code class="descname">grapher</code><span class="sig-paren">(</span><em>func</em>, <em>graphtype</em>, <em>xmin</em>, <em>xmax</em>, <em>xscale</em>, <em>ymin</em>, <em>ymax</em>, <em>yscale</em>, <em>zmin</em>, <em>zmax</em>, <em>zscale</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/3Dfunctiongrapher.html#grapher"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#3Dfunctiongrapher.grapher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses the processed variables to graph the function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> &#8211; Processed function string</li>
+<li><strong>graphtype</strong> &#8211; Graphtype value from tkinter.Radiobutton()</li>
+<li><strong>xmin</strong> &#8211; X-axis minimum</li>
+<li><strong>xmax</strong> &#8211; X-axis maximum</li>
+<li><strong>xscale</strong> &#8211; X-axis step</li>
+<li><strong>ymin</strong> &#8211; Y-axis minimum</li>
+<li><strong>ymax</strong> &#8211; Y-axis maximum</li>
+<li><strong>yscale</strong> &#8211; Y-axis step</li>
+<li><strong>zmin</strong> &#8211; Z-axis minimum</li>
+<li><strong>zmax</strong> &#8211; Z-axis maximum</li>
+<li><strong>zscale</strong> &#8211; Z-axis step</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="3Dfunctiongrapher.main">
+<code class="descclassname">3Dfunctiongrapher.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/3Dfunctiongrapher.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#3Dfunctiongrapher.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses window_process(), funcprocess(), and grapher() to take the inputs and use the grapher to graph the inputted function in the specified window</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="3Dfunctiongrapher.quitfunc">
+<code class="descclassname">3Dfunctiongrapher.</code><code class="descname">quitfunc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/3Dfunctiongrapher.html#quitfunc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#3Dfunctiongrapher.quitfunc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes Tk window</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="3Dfunctiongrapher.savegraph">
+<code class="descclassname">3Dfunctiongrapher.</code><code class="descname">savegraph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/3Dfunctiongrapher.html#savegraph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#3Dfunctiongrapher.savegraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the graph as an image, savenumber is used as global var to allow increment after each save</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="3Dfunctiongrapher.window_process">
+<code class="descclassname">3Dfunctiongrapher.</code><code class="descname">window_process</code><span class="sig-paren">(</span><em>raw_input</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/3Dfunctiongrapher.html#window_process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#3Dfunctiongrapher.window_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the variables and converts them to floats, will raise an error if non-numerical values are entered</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>raw_input</strong> &#8211; Raw input from tkinter.Entry() boxes</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to New&#8217;s documentation!</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/3Dfunctiongrapher.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to New’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">3Dfunctiongrapher 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, rtarvids.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.2.
+    </div>
+  </body>
+</html>
